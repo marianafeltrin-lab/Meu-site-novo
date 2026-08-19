@@ -20,17 +20,21 @@ header{
     margin: 0 auto;
     padding: 16px;
     }
+    article{
+        display: flex;
+    }
+
+
+
 img{
-    width:100px;
-    height: 80px;
+    width:550px;
+    height: 300px;
 }
 
 
-
-
-
-
-
+   .artigo-autor{
+    font-weight: bold;
+   }
     </style>
 </head>
 <body>
@@ -43,10 +47,30 @@ img{
     <img src="Gemini_Generated_Image_bjghgabjghgabjgh__1_-removebg-preview.png" alt="">
 
     <h2>Minha primeira notícia</h2>
-    <p>Por Mariana</p>
-    <p>O colégio Rural Estadual de Pinhalzinh, fica em uma comunidade no interior da cidadede Rio Bonito do Iguaçu no Paraná. Entre os trabalhos desenvolvidos, 
-     destaca-se os índices alcançadosnos últimos anos com IDEB e a prova Paraná e também a aprovação dos alunos formados em diversos vestibulares do estado </p>
+    <p class="artigo-autor">Por Mariana Feltrin</p>
+    <p>O colégio Rural Estadual de Pinhalzinho, fica em uma comunidade no interior da cidadede Rio Bonito do Iguaçu no Paraná. Entre os trabalhos desenvolvidos, 
+     destaca-se os índices alcançados nos últimos anos com IDEB e a prova Paraná e também a aprovação dos alunos formados em diversos vestibulares do estado </p>
+
+    <button>❤️​<span>0</span></button>
+    <button>👍​<span>0</span></button>
+    
+<article>
+    <img src="" alt="">
+
+    <div>
+        <h2>Meu segundo post</h2>
+       <p class="artigo-autor">Por Mariana Feltrin</p>
+       <p>Aqui vou dar dicas de estudos para quem está se preparando para vestibulares e Enem</p>
+       <button>❤️​<span>0</span></button>
+       <button>👍​<span>0</span></button>
+    </div>
+</article>
+
 </main>
 
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function(botao))
+</script>
 </html>
