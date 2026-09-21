@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site novo</title>
+    <title>Audi RS e-tron GT performace</title>
     <style>
 header{
-    background-color: #254a72;
+    background-color: #09110e;
     color: #ffffff;
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin:0 auto ;
-    padding: 16px;
+    padding: 26px;
 }
     main{
-    background-color: #5574a1;
-    color: #93d4fad2;
-    max-width: 800px;
+    background-color: #175540;
+    color: #d1d1d1d2;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 26px;
     }
     article{
         display: flex;
@@ -27,64 +27,79 @@ header{
 
 
 img{
-    width:550px;
-    height: 300px;
+    width:600px;
+    height: 400px;
 }
 
 
    .artigo-autor{
     font-weight: bold;
    }
+
+
+
     </style>
 </head>
 <body>
-    <header>        
-        <h1>Notícias do Colégio Pinhalzinho - RBI</h1> 
-        <p> Este site vai trazer um pouco do dia a dia da escola</p>
+    <header>
+        <h1>Audi RS e-tron performace chega ao Brasil</h1>
+        <p>Superesportivo elétrico será vendido apenas sob encomenda e traz novas tecnologia. </p>
     </header>
-
 <main>
-    <img src="Gemini_Generated_Image_bjghgabjghgabjgh__1_-removebg-preview.png" alt="">
+    <img src="audi-lanca-o-rs-e-tron-gt-performance-no-brasil (1).webp" alt="">
+<h2> Novo Audi RS e-tron GT Performance chega ao Brasil com 925 cv e bateria maior</h2>
+<p class="artigo-autor">Por Mariana Feltrin </p>
+<p>A Audi do Brasil anunciou a chegada do novo RS e-tron GT Performance, versão mais extrema de seu superesportivo elétrico.
+     O modelo estreia com mudanças no visual, nova bateria e um conjunto mecânico mais potente, capaz de entregar 925 cv e acelerar de 0 a 100 km/h em apenas 2,5 segundos.
+     O preço sugerido é de R$ 1.334.990, e as vendas serão realizadas exclusivamente sob encomenda.</p>
 
-    <h2>Minha primeira notícia</h2>
-    <p class="artigo-autor">Por Mariana Feltrin</p>
-    <p>O colégio Rural Estadual de Pinhalzinho, fica em uma comunidade no interior da cidadede Rio Bonito do Iguaçu no Paraná. Entre os trabalhos desenvolvidos, 
-     destaca-se os índices alcançados nos últimos anos com IDEB e a prova Paraná e também a aprovação dos alunos formados em diversos vestibulares do estado </p>
+     <button>❤️​<span>0</span></button>
+     <button>👍​<span>0</span></button>
 
-    <button>❤️​<span>0</span></button>
-    <button>👍​<span>0</span></button>
+     <article>
+        <img src="audi-rs-e-tron-performance-2024 (1).jpg" alt="">
     
-<article>
-    <img src="images (1).jpeg" alt="">
+        <div>
+            <h2>Audi RS e-tron</h2>
+           <p class="artigo-autor">Por Mariana Feltrin</p>
+           <p> Ao contrário de outros elétricos, o e-tron GT possui câmbio de duas marchas, sendo a primeira para torque máximo e a segunda,
+             para velocidade de cruzeiro e melhor eficiência – a escolha entre as duas é feita automaticamente pelo veículo, já que as borboletas atrás do volante são dedicadas à seleção do nível de intensidade do sistema de regeneração de energia, atuando como uma espécie de freio-motor. Sem um eixo mecânico,
+             a tração integral quattro é 5 vezes mais rápida no acionamento que o sistema tradicional e pode variar a distribuição em 100% entre os eixos dianteiro e traseiro.</p>
+           <button>❤️​<span>0</span></button>
+           <button>👍​<span>0</span></button>
+        </div>
+    </article>
+    
+    </main>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function(botao){
+            let curtiu = false;
+            botao.addEventListener("click",botaoClicado);
+            function botaoClicado(){
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if(curtiu === false){
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+    </html><s
 
-    <div>
-        <h2>Meu segundo post</h2>
-       <p class="artigo-autor">Por Mariana Feltrin</p>
-       <p>Paraná alcança o primeiro lugar no ranking brasileiro no IDEB-Indíce de desenvolvimento da educação básica- de 2025.</p>
-       <button>❤️​<span>0</span></button>
-       <button>👍​<span>0</span></button>
-    </div>
-</article>
 
-</main>
+
+
+
+
+
+
+
+
 
 </body>
-<script>
-    const botoes = document.querySelectorAll("button");
-    botoes.forEach(function(botao){
-        let curtiu = false;
-        botao.addEventListener("click",botaoClicado);
-        function botaoClicado(){
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if(curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else {
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    })
-</script>
 </html>
